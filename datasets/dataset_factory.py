@@ -27,7 +27,7 @@ from datasets import vehicle
 datasets_map = {
     'cifar10': cifar10,
     'flowers': flowers,
-    'quiz': vehicle,
+    'vehicle': vehicle,
     'imagenet': imagenet,
     'mnist': mnist,
 }
