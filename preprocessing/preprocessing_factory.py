@@ -54,13 +54,8 @@ def get_preprocessing(name, is_training=False):
       'inception_resnet_v2': inception_preprocessing,
       'lenet': lenet_preprocessing,
       'mobilenet_v1': inception_preprocessing,
-      'mobilenet_v2': inception_preprocessing,
-      'mobilenet_v2_035': inception_preprocessing,
-      'mobilenet_v2_140': inception_preprocessing,
       'nasnet_mobile': inception_preprocessing,
       'nasnet_large': inception_preprocessing,
-      'pnasnet_mobile': inception_preprocessing,
-      'pnasnet_large': inception_preprocessing,
       'resnet_v1_50': vgg_preprocessing,
       'resnet_v1_101': vgg_preprocessing,
       'resnet_v1_152': vgg_preprocessing,
@@ -73,6 +68,7 @@ def get_preprocessing(name, is_training=False):
       'vgg_a': vgg_preprocessing,
       'vgg_16': vgg_preprocessing,
       'vgg_19': vgg_preprocessing,
+      'densenet': inception_preprocessing,
   }
 
   if name not in preprocessing_fn_map:
